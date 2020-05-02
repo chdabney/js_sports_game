@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Game Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Pokemon Stadium</h1>
+    </div>
+    <div class="main">
+        <div class="teams">
+            <div class="left">
+                <h2>
+                    Player 1
+                </h2>
+                <div class="goals">
+                    ATTACKS MADE: <span id="teamone-numshots">0</span><br>
+                    HITS: <span id="teamone-numgoals">0</span>
+
+
+                </div>
+                <div>
+                    <button class="atk-button" id="teamone-shoot-button">Attack</button>
+                </div>
+
+            </div>
+            <div class="right">
+                <h2>
+                    Player 2
+                </h2>
+                <div class="goals">
+                    ATTACKS MADE: <span id="teamtwo-numshots">0</span><br>
+                    HITS: <span id="teamtwo-numgoals">0</span>
+                </div>
+                <div>
+                    <button class="atk-button" id="teamtwo-shoot-button">Attack</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="reset-container">
+            <h2>NUMBER OF RESETS:</h2>
+            <div id="num-resets">0</div><br>
+            <button id="reset-button">RESET</button>
+
+        </div>
+
+        <div class="atk-img">
+            <img src="assets/images/hit1.gif" alt="">
+            <div class="atk-img-button"><button>HIT!</button></div>
+        </div>
+        <div class="miss-img">
+            <img src="assets/images/miss1.gif" alt="">
+            <div class="miss-img-button"><button>MISS!</button></div>
+        </div>
+        <div class="victory-img">
+            <h1 class="victory-text">text</h1>
+            <img src="assets/images/victory.gif" alt="">
+            <div class="victory-img-button"><button>OK!</button></div>
+        </div>
+    </div>
+    <audio id="goal-sound" src="assets/audio/Fire Blast.mp3"></audio>
+    <audio id="miss-sound" src="assets/audio/Slack Off part 1.mp3"></audio>
+    <audio id="crowd-cheer" src="assets/audio/Big-crowd-cheering.mp3"></audio>
+
+    <footer class="footer"></footer>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
